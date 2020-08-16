@@ -1,0 +1,6 @@
+const defaultUsers =[
+    {userId:"対象者のID（一意であれば動く)",userName: "対象者名"},
+    {userId:"対象者のID（一意であれば動く)",userName: "対象者名"},
+    ....
+    {userId:"対象者のID（一意であれば動く)",userName: "対象者名"},
+]

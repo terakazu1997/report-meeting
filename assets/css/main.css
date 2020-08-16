@@ -1,0 +1,75 @@
+
+.inContent{
+    margin-left:18px;
+    font-size: 16px;
+}
+.checkbox{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 18px;
+    text-align: left;
+    margin-left: 30px;
+}
+/* ラベルのスタイル　*/
+.checkbox label.choice-sentence{
+    bottom: 0;
+    padding-left: 30px;
+    cursor: pointer;
+    display: block;
+}
+.checkbox label::before {
+    left: 5px;
+    margin-top: -8px;
+    width: 10px;
+    height: 12px;
+    border-right: 3px solid rgb(51,102,204);
+    border-bottom: 3px solid rgb(51,102,204);
+    transform: rotate(45deg);
+    opacity: 0;
+}
+.checkbox label::after {
+    left: 0;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(160,160,160);
+
+}
+.checkbox label::before,.checkbox label::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+}
+/* 元のチェックボックスを表示しない */
+.checkbox input[type=checkbox] {
+	display: none;
+}
+/* チェックした時のスタイル */
+.checkbox input[type=checkbox]:checked + label,
+.checkbox input[type=checkbox]:checked + label::before,
+.checkbox input[type=checkbox]:checked + label::after{
+    opacity: 1;
+    color: rgb(51,102,204);
+    border-color: rgb(51,102,204);
+}
+.button {
+    width: 100px;
+    height: 30px;
+    border:1px solid rgb(13, 157, 13);
+    border-radius: 5px;
+    background-color: #fff;
+    color: rgb(13, 157, 13);
+    cursor: pointer; 
+    
+}
+li{
+    margin-top: 18px;
+}
+.button:hover{
+    background: rgb(217, 240, 217);
+}
+.confirmButton {
+    margin-top: 20px;
+}
